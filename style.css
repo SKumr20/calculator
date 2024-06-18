@@ -1,0 +1,18 @@
+button {
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+    scale: 0.95;
+}
+
