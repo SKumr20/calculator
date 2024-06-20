@@ -13,6 +13,7 @@ function calculate () {
     let input = display.value.trim();
     let operators = ['+', '-', 'x', '÷'];
     let numbers = [];
+    let currentOperator = [];
 
     let operatorsFound = false
     // Split the input if it contains any operators
@@ -24,10 +25,12 @@ function calculate () {
                 {
                     operatorsFound = true;
                     numbers = input.split(operators[i]);
+                    currentOperator = operators[i];
                     break;
                 }
         }
     console.log(numbers);
+    console.log(currentOperator);
     
     if (!operatorsFound){
         display.value = "Errorrr";
