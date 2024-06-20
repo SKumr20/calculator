@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="Calculator">
         <input id="display" readonly>
         <div id="keys">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">x</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-            <button class="operator">C</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="operator">=</button>
+            <button onclick="toDisplay('7')">7</button>
+            <button onclick="toDisplay('8')">8</button>
+            <button onclick="toDisplay('9')">9</button>
+            <button class="operator" onclick="toDisplay('x')">x</button>
+            <button onclick="toDisplay('4')">4</button>
+            <button onclick="toDisplay('5')">5</button>
+            <button onclick="toDisplay('6')">6</button>
+            <button class="operator" onclick="toDisplay('-')">-</button>
+            <button onclick="toDisplay('1')">1</button>
+            <button onclick="toDisplay('2')">2</button>
+            <button onclick="toDisplay('3')">3</button>
+            <button class="operator" onclick="toDisplay('+')">+</button>
+            <button class="operator" onclick="clearDisplay()">C</button>
+            <button onclick="toDisplay('0')">0</button>
+            <button onclick="toDisplay('.')">.</button>
+            <button class="operator" onclick="calculate()">=</button>
         </div>
     </div>
 </body>
