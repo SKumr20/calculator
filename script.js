@@ -29,10 +29,31 @@ function calculate () {
                     break;
                 }
         }
-    console.log(numbers);
-    console.log(currentOperator);
+    // For Debugging    
+    // console.log(numbers);
+    // console.log(currentOperator);
+
+    let result;
     
     if (!operatorsFound){
-        display.value = "Errorrr";
+        display.value = "Error";
     }
+
+    else if (currentOperator == "+")
+        {
+            result = parseFloat(numbers[0]) + parseFloat(numbers[1]);
+        }
+    else if (currentOperator == "-")
+        {
+            result = parseFloat(numbers[0]) - parseFloat(numbers[1]);
+        }
+    else if (currentOperator == "x")
+        {
+            result = parseFloat(numbers[0]) * parseFloat(numbers[1]);
+        }
+    else if (currentOperator == "÷")
+        {
+            result = parseFloat(numbers[0]) / parseFloat(numbers[1]);
+        }
+    display.value = result;
 }
